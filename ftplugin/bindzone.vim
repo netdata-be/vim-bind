@@ -33,7 +33,7 @@ function! UpdateDNSSerialZone()
   endif
 endfunction
 
-
+:map <F2> :call UpdateDNSSerialZone()<cr>
 verbose au BufWritePre,FileWritePre * :call UpdateDNSSerialZone()
 
 
